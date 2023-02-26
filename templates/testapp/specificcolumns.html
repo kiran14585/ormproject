@@ -1,0 +1,36 @@
+<!-- specificcolumns.html -->
+
+
+<!DOCTYPE html>
+
+{% extends 'testapp/base.html' %}
+
+{% block body_block %}
+<h1>Employee information Dashboard </h1>
+<table border="2">
+  <thead>
+
+    <th>Employee Name</th>
+    <th>Employee Salary</th>
+    <th>Employee address</th>
+
+  </thead>
+
+    {% for emp in emp_list %}
+      <tr>
+      {% for v in emp %}
+        <td>{{v}}</td>
+
+      {% endfor %}
+
+
+
+      </tr>
+      {% endfor %}
+
+<thead>
+  <th></th>
+</thead>
+</table> <br><br>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+<!-- specificcolumns.html -->
+
+
+<!DOCTYPE html>
+
+{% extends 'testapp/base.html' %}
+
+{% block body_block %}
+<h1>Employee Aggregate Information </h1>
+
+<ul>
+
+  <h2> Average Salary : {{avg}} </h2>
+  <h2> Max Salary : {{max}} </h2>
+  <h2> Min Salary : {{min}} </h2>
+  <h2> Total Salary : {{sum}} </h2>
+  <h2> No. of employees : {{count}} </h2>
+  
+
+</ul>
+
+
+{% endblock %}
